@@ -13,5 +13,7 @@ locals {
 
   # TODO: Dodaj local budgets_for_alerts (budżet, krok 2)
 
+  budgets_for_alerts = toset(["10", "20", "50"])
+
   # TODO: Dodaj local principal_id (Key Vault/SOPS, krok 3)
 }
