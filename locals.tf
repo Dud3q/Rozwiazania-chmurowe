@@ -16,4 +16,11 @@ locals {
   budgets_for_alerts = toset(["10", "20", "50"])
 
   # TODO: Dodaj local principal_id (Key Vault/SOPS, krok 3)
+
+  # locals.tf - konfiguracja principal_id
+
+  principal_id = data.azurerm_client_config.current.object_id
+
 }
+
+
